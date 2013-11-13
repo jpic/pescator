@@ -1,0 +1,20 @@
+{% extends "admin/base.html" %}
+
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Le pescator site admin' %}{% endblock %}
+
+{% block branding %}
+    <a href="{% url 'admin:index' %}" class="brand" id="site-name">{% trans 'Le pescator administration' %}</a>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block footer %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('input.span8[type=checkbox]').removeClass('span8');
+        });
+    </script>
+{% endblock footer %}

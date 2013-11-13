@@ -1,0 +1,34 @@
+django
+
+django-debug-toolbar
+django-debug-toolbar-template-timings
+django-cache-panel
+
+# classic
+-e git+https://github.com/jpic/django-admin-bootstrap.git#egg=admin-bootstrap
+-e git+https://github.com/jpic/django-yourlabs.git#egg=yourlabs
+django-extensions
+ipython
+ipdb
+django-haystack
+whoosh
+django-reversion
+django-modeltranslation
+django-bootstrap-form
+django-wysiwyg-redactor
+django-sortedm2m
+django-autocomplete-light
+easy-thumbnails
+
+# for docs
+sphinx
+pycco
+
+# for production deployment
+django-compressor
+jsmin
+
+# use git cssmin with fixed setup.py for python3 support
+-e git+https://github.com/jpic/cssmin.git#egg=cssmin
+# cssmin
+BeautifulSoup4

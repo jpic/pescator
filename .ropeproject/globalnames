@@ -1,0 +1,7 @@
+€}q(Upages.models]q(UBlockqUautoslug_translatedqUPhotoqUPageqUautomenu_nameqeUpescator.views]qUHomeViewq	aUpages.views]q
+UPageDetailViewqaUmodels]qUEntryqaUpescator.urls]qUurlpatternsqaUpages.translation]q(UBlockTranslationqUPageTranslationqUPhotoTranslationqeUpescator.settings.base]q(UMIDDLEWARE_CLASSESqUSITE_IDqUROOT_URLCONFqULANGUAGE_CODEqUUSE_I18NqU
+SECRET_KEYqUCOMPRESS_CSS_FILTERSqUSTATICFILES_FINDERSqUSTATIC_ROOTqU	TIME_ZONEqUgettextqUTEMPLATE_LOADERSq UWSGI_APPLICATIONq!ULOCALE_PATHSq"UALLOWED_HOSTSq#UHAYSTACK_CONNECTIONSq$UTEMPLATE_DIRSq%UPROJECT_ROOTq&UCOMPRESS_PRECOMPILERSq'Uproject_directoryq(U
+STATIC_URLq)U	LANGUAGESq*UUSE_L10Nq+UUSE_TZq,UCOMPRESS_JS_FILTERSq-UFIXTURE_DIRSq.UINSTALLED_APPSq/USTATICFILES_DIRSq0U
+MEDIA_ROOTq1UEXPOSE_SETTINGSq2UMODELTRANSLATION_CUSTOM_FIELDSq3U	MEDIA_URLq4eUpages.admin]q5(U	PageAdminq6U
+BlockAdminq7eU
+pages.urls]q8haUurls]q9haUpescator.context_processors]q:Umenuq;au.

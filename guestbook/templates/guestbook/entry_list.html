@@ -1,0 +1,33 @@
+{% extends 'guestbook/base.html' %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans 'Guestbook' %}{% endblock %}
+
+{% block extra_head %}
+<style type="text/css">
+    .entry {
+        display: block;
+    }
+
+    .entry .date {
+        font-size: small;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+    <h1>{% trans 'Guestbook' %}</h1>
+
+    {% for entry in object_list %}
+    <div class="entry">
+        <h2>{{ entry.name }}</h2>
+        <p>{{ entry.body }}</p>
+        <span class="date">{% blocktrans with date=entry.creation_datetime|date:'Y-m-d' %}Posted on {{ date }}{% endblocktrans %}</span>
+    </div>
+    {% endfor %}
+{% endblock %}
+
+{% block sidebar %}
+    {% include 'guestbook/_entry_form.html' %}
+{% endblock %}

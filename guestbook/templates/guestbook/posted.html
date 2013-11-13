@@ -1,0 +1,11 @@
+{% extends 'guestbook/base.html' %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans 'Thanks for your feedback' %} !{% endblock %}
+
+{% block body %}
+<h1>{% trans 'Thanks for your feedback' %} !</h1>
+
+<p>{% trans 'Your feedback will be validated by a moderator and then published on our website' %}.</p>
+{% endblock %}
