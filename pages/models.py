@@ -40,6 +40,17 @@ class Photo(models.Model):
 
 @python_2_unicode_compatible
 class Page(models.Model):
+    CAROUSEL_ABOVE_CONTENTS = 0
+    CAROUSEL_UNDER_CONTENTS = 1
+    CAROUSEL_ABOVE_SIDEBAR = 2
+    CAROUSEL_UNDER_SIDEBAR = 3
+    CAROUSEL_CHOICES = (
+        (CAROUSEL_ABOVE_CONTENTS, _('Above body')),
+        (CAROUSEL_UNDER_CONTENTS, _('Under body')),
+        (CAROUSEL_ABOVE_SIDEBAR, _('Above sidebar')),
+        (CAROUSEL_UNDER_SIDEBAR, _('Under sidebar')),
+    )
+
     name = models.CharField(max_length=200, verbose_name=_('page title'))
     menu_name = models.CharField(max_length=100,
         verbose_name=_('menu title'), null=True, blank=True)
@@ -50,6 +61,9 @@ class Page(models.Model):
         verbose_name=_('photo to use in the page header'))
     blocks = SortedManyToManyField(Block, blank=True)
     photos = SortedManyToManyField(Photo, blank=True)
+    carousel_position = models.IntegerField(
+        choices=CAROUSEL_CHOICES,
+        default=CAROUSEL_ABOVE_CONTENTS)
     template = models.CharField(max_length=50,
         default='pages/page_detail.html')
 

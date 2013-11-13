@@ -1,42 +1,34 @@
 {% extends 'pages/base.html' %}
 
-{% load thumbnail %}
-
 {% block head_title %}{{ page }}{% endblock %}
 
+{% block body_class %}carousel-position-{{ page.carousel_position }}{% endblock %}
+
 {% block body %}
+    {% if page.carousel_position == 0 %}
+        {% include 'pages/_carousel.html' %}
+    {% endif %}
+
     <h1>{{ page }}</h1>
     {{ page.body|safe }}
+    
+    {% if page.carousel_position == 1 %}
+        {% include 'pages/_carousel.html' %}
+    {% endif %}
 {% endblock %}
 
 {% block sidebar %}
-    <div id="page-carousel" class="carousel slide" data-ride="carousel">
-
-        <ol class="carousel-indicators">
-            <li data-target="#page-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#page-carousel" data-slide-to="1"></li>
-        </ol>
-
-        <div class="carousel-inner">
-            {% for photo in photos %}
-            <div class="item {% if forloop.first %}active{% endif %}">
-                <img src="{% thumbnail photo.image 400x400 crop %}" alt="{{ photo.name }}" />
-                <div class="carousel-caption">
-                    {{ photo.name }}
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-
-        <a class="left carousel-control" href="#page-carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#page-carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
+    {% if page.carousel_position == 2 %}
+        {% include 'pages/_carousel.html' %}
+    {% endif %}
 
     {% for b in blocks %}
         {% include b.template with object=b %}
     {% endfor %}
+    
+    {% if page.carousel_position == 3 %}
+        {% include 'pages/_carousel.html' %}
+    {% endif %}
 {% endblock %}
+
+

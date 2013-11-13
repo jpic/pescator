@@ -29,7 +29,7 @@ class PageAdmin(TranslationAdmin):
             'fields': ('name', 'menu_name', 'body', 'photos', 'blocks'),
         }),
         (_('Advanced'), {
-            'fields': ('template', 'slug',),
+            'fields': ('carousel_position', 'template', 'slug',),
         }),
     )
 admin.site.register(Page, PageAdmin)

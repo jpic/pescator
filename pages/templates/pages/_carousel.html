@@ -1,0 +1,28 @@
+{% load thumbnail %}
+
+
+<div id="page-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        {% for photo in photos %}
+        <li data-target="#page-carousel" data-slide-to="{{ forloop.counter0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+        {% endfor %}
+    </ol>
+
+    <div class="carousel-inner">
+        {% for photo in photos %}
+        <div class="item {% if forloop.first %}active{% endif %}">
+            <img src="{% if page.carousel_position <= 1 %}{% thumbnail photo.image 800x400 crop %}{% else %}{% thumbnail photo.image 400x400 crop %}{% endif %}" alt="{{ photo.name }}" />
+            <div class="carousel-caption">
+                {{ photo.name }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <a class="left carousel-control" href="#page-carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#page-carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
