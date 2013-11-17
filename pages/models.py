@@ -54,9 +54,16 @@ class Page(models.Model):
     name = models.CharField(max_length=200, verbose_name=_('page title'))
     menu_name = models.CharField(max_length=100,
         verbose_name=_('menu title'), null=True, blank=True)
-    menu_order = models.IntegerField(verbose_name=_('menu order'),
-        help_text=_('the lowest number, the earliest this page will be '
-            'in menu'), default=9)
+    menu_order = models.IntegerField(verbose_name=_('order in menu'),
+        help_text=_('if this page should be first in the menu, set to 1. If'
+            ' it should be second then set to 2 and so on. Leave empty if'
+            ' there should be no menu link for this page.'),
+        null=True, blank=True)
+    footer_order = models.IntegerField(verbose_name=_('order in footer'),
+        help_text=_('if this page should be first in the footer linkes, set'
+            ' to 1. If it should be second then set to 2 and so on. Leave'
+            ' empty if it should not appear in the footer at all.'),
+        null=True, blank=True)
     slug = models.CharField(max_length=200, null=True, blank=True)
     body = RedactorField(verbose_name=_('text'))
     header_image = models.ImageField(upload_to='pages/page',

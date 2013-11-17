@@ -48,6 +48,7 @@ TEMPLATE_CONTEXT_PROCESSORS += (
     'django.core.context_processors.request',
     'yourlabs.context_processors.expose_settings',
     'pescator.context_processors.menu',
+    'pescator.context_processors.footer',
 )
 
 EXPOSE_SETTINGS = ('DEBUG', 'COMPRESS_ENABLED')
