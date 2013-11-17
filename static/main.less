@@ -7,28 +7,33 @@
 @font-size-base:          16px;
 @line-height-base:        2;
 
-h1, .h1 { font-size: floor(@font-size-base * 2); } // ~36px
-h2, .h2 { font-size: floor(@font-size-base * 1.80); } // ~30px
-h3, .h3 { font-size: ceil(@font-size-base * 1.50); } // ~24px
-h4, .h4 { font-size: ceil(@font-size-base * 1.25); } // ~18px
+h1, .h1 { font-size: floor(@font-size-base * 2); } 
+h2, .h2 { font-size: floor(@font-size-base * 1.80); }
+h3, .h3 { font-size: ceil(@font-size-base * 1.50); } 
+h4, .h4 { font-size: ceil(@font-size-base * 1.25); }
 h5, .h5 { font-size:  @font-size-base; }
-h6, .h6 { font-size: ceil(@font-size-base * 0.85); } // ~12px
+h6, .h6 { font-size: ceil(@font-size-base * 0.85); }
 
-// Navbar overrides
 @import url(http://fonts.googleapis.com/css?family=Unica+One:400);
 
 @navbar-default-bg:                        white;
 @navbar-default-link-active-bg:            lighten(#007add, 50.5%);
 
-// body {
-//     background-color: #FFF7E4;
-// }
+/*
+body {
+    background-color: #FFF7E4;
+}
+*/
 
 .navbar {
     font-family: 'Unica One', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
 }
 
+@media screen {
+    h1, .h1 {
+        font-size: 34px;
+    }
 }
 
 h1 
