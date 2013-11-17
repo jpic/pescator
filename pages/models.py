@@ -71,7 +71,7 @@ class Page(models.Model):
         default='pages/page_detail.html')
 
     class Meta:
-        ordering = ('name',)
+        ordering = ('menu_order', 'name',)
 
     def __str__(self):
         return self.name
