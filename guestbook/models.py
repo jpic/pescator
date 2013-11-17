@@ -16,10 +16,10 @@ class Entry(models.Model):
     )
 
     status = models.IntegerField(choices=STATUS_CHOICES, default=STATUS_NEW)
-    name = models.CharField(max_length=80)
+    name = models.CharField(max_length=80, verbose_name=_('your name'))
     email = models.EmailField()
     creation_datetime = models.DateTimeField(auto_now_add=True)
-    body = models.TextField()
+    body = models.TextField(verbose_name=_('your feedback'))
 
     class Meta:
         ordering = ('-creation_datetime',)
