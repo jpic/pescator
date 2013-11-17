@@ -7,7 +7,7 @@ from pages.models import Page
 def menu(request):
     menu = []
 
-    for page in Page.objects.all():
+    for page in Page.objects.order_by('menu_order'):
         menu.append({
             'title': page.menu_name,
             'url': page.get_absolute_url(),
