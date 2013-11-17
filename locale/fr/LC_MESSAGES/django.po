@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-17 17:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: guestbook/models.py:14
+msgid "New"
+msgstr "Nouveau"
+
+#: guestbook/models.py:15
+msgid "Validated"
+msgstr "Validé"
+
+#: guestbook/models.py:19
+msgid "your name"
+msgstr "votre nom"
+
+#: guestbook/models.py:22
+msgid "your feedback"
+msgstr "votre retour d'experience"
+
+#: guestbook/models.py:26
+msgid "entries"
+msgstr "entrées"
+
+#: guestbook/templates/guestbook/_entry_form.html:6
+msgid "Submit"
+msgstr "Soumettre"
+
+#: guestbook/templates/guestbook/entry_list.html:5
+#: guestbook/templates/guestbook/entry_list.html:20
+#: pescator/context_processors.py:17
+msgid "Guestbook"
+msgstr "Livre d'or"
+
+#: guestbook/templates/guestbook/entry_list.html:26
+#, python-format
+msgid "Posted on %(date)s"
+msgstr "Envoyé le %(date)s"
+
+#: guestbook/templates/guestbook/posted.html:5
+#: guestbook/templates/guestbook/posted.html:8
+msgid "Thanks for your feedback"
+msgstr "Merci pour votre retour d'experience"
+
+#: guestbook/templates/guestbook/posted.html:10
+msgid ""
+"Your feedback will be validated by a moderator and then published on our "
+"website"
+msgstr "Votre retour d'experience sera validé par un modérateur puis publié sur notre site"
+
+#: pages/admin.py:19 pages/admin.py:32
+msgid "Advanced"
+msgstr "Avancé"
+
+#: pages/models.py:18
+msgid "block title"
+msgstr "titre du block"
+
+#: pages/models.py:19 pages/models.py:58
+msgid "text"
+msgstr "texte"
+
+#: pages/models.py:31
+msgid "photo title"
+msgstr "titre de la photo"
+
+#: pages/models.py:48
+msgid "Above body"
+msgstr "Au dessus du corps de la page"
+
+#: pages/models.py:49
+msgid "Under body"
+msgstr "En dessous du corps de la page"
+
+#: pages/models.py:50
+msgid "Above sidebar"
+msgstr "Au dessus de la barre de coté"
+
+#: pages/models.py:51
+msgid "Under sidebar"
+msgstr "En dessous de la barre de coté"
+
+#: pages/models.py:54
+msgid "page title"
+msgstr "titre de la page"
+
+#: pages/models.py:56
+msgid "menu title"
+msgstr "titre du menu"
+
+#: pages/models.py:61
+msgid "photo to use in the page header"
+msgstr "photo à utiliser dans l'en-tête de la page"
+
+#: pescator/settings/base.py:89
+msgid "Français"
+msgstr ""
+
+#: pescator/settings/base.py:90
+msgid "English"
+msgstr ""
+
+#: templates/base_site.html:41
+msgid "Toggle navigation"
+msgstr "Afficher ou cacher la navigation"
+
+#: templates/admin/base_site.html:5
+msgid "Le pescator site admin"
+msgstr "Administration du site du Pescator"
+
+#: templates/admin/base_site.html:8
+msgid "Le pescator administration"
+msgstr "Administration du site du Pescator"
