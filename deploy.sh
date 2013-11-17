@@ -39,6 +39,7 @@ function deploy() {
     git stash
     git pull origin master
     ./manage.py collectstatic -l --noinput
+    ./manage.py migrate
     touch pescator/wsgi.py
 }
 
