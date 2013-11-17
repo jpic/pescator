@@ -26,13 +26,13 @@ admin.site.register(Block, BlockAdmin)
 class PageAdmin(TranslationAdmin):
     fieldsets = (
         (None, {
-            'fields': ('name', 'menu_name', 'menu_order', 'header_image',
-                'body', 'photos', 'blocks'),
+            'fields': ('name', 'menu_name', 'menu_order', 'footer_order',
+                'header_image', 'body', 'photos', 'blocks'),
         }),
         (_('Advanced'), {
             'fields': ('carousel_position', 'template', 'slug',),
         }),
     )
-    list_display = ('name', 'menu_name', 'menu_order')
-    list_editable = ('menu_order',)
+    list_display = ('name', 'menu_name', 'menu_order', 'footer_order')
+    list_editable = ('menu_order', 'footer_order')
 admin.site.register(Page, PageAdmin)
