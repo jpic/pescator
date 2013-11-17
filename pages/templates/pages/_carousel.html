@@ -2,11 +2,13 @@
 
 
 <div id="page-carousel" class="carousel slide" data-ride="carousel">
+    {% if photos|length > 1 %}
     <ol class="carousel-indicators">
         {% for photo in photos %}
         <li data-target="#page-carousel" data-slide-to="{{ forloop.counter0 }}" class="{% if forloop.first %}active{% endif %}"></li>
         {% endfor %}
     </ol>
+    {% endif %}
 
     <div class="carousel-inner">
         {% for photo in photos %}
@@ -19,10 +21,12 @@
         {% endfor %}
     </div>
 
+    {% if photos|length > 1 %}
     <a class="left carousel-control" href="#page-carousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
     <a class="right carousel-control" href="#page-carousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
+    {% endif %}
 </div>
