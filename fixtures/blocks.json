@@ -1,0 +1,54 @@
+[
+{
+    "pk": 1, 
+    "model": "pages.block", 
+    "fields": {
+        "body": "<p><a href=\"http://www.restocheznous.fr/177-le-pescator-fruits-de-mer-77-de-12h-a-14h-et-de-19h-a-22h\" target=\"_blank\">Home delivery</a>&nbsp;is available&nbsp;<a href=\"http://www.restocheznous.fr/177-le-pescator-fruits-de-mer-77-de-12h-a-14h-et-de-19h-a-22h\" title=\"Le Pescator ( Fruits de mer ): 7/7 de 12h \u00e0 14h et de 19h \u00e0 22h\" style=\"line-height: 1.5em; font-size: 17px; cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; outline: none medium;\">7/7 between 12AM and 2PM and also between 7PM and</a>&nbsp;10PM.</p>\r\n", 
+        "name_fr": "Livraison \u00e0 domicile", 
+        "name": "Home delivery", 
+        "body_fr": "<p>La <a href=\"http://www.restocheznous.fr/177-le-pescator-fruits-de-mer-77-de-12h-a-14h-et-de-19h-a-22h\" target=\"_blank\">livraison \u00e0 domicile</a>&nbsp;7/7 de 12h \u00e0 14h et de 19h \u00e0 22h,&nbsp;est fournie par notre partenaire RestoChezNous.</p>\r\n", 
+        "template": "pages/block.html", 
+        "name_en": "Home delivery", 
+        "body_en": "<p><a href=\"http://www.restocheznous.fr/177-le-pescator-fruits-de-mer-77-de-12h-a-14h-et-de-19h-a-22h\" target=\"_blank\">Home delivery</a>&nbsp;is available&nbsp;<a href=\"http://www.restocheznous.fr/177-le-pescator-fruits-de-mer-77-de-12h-a-14h-et-de-19h-a-22h\" title=\"Le Pescator ( Fruits de mer ): 7/7 de 12h \u00e0 14h et de 19h \u00e0 22h\" style=\"line-height: 1.5em; font-size: 17px; cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; outline: none medium;\">7/7 between 12AM and 2PM and also between 7PM and</a>&nbsp;10PM.</p>\r\n"
+    }
+},
+{
+    "pk": 2, 
+    "model": "pages.block", 
+    "fields": {
+        "body": "<p>Le Pescator offers the express menu from Monday to Friday:</p>\r\n\r\n<ul>\r\n\t<li>main dish and desert: 15\u20ac</li>\r\n\t<li>start, main dish and desert: 20\u20ac</li></ul>\r\n", 
+        "name_fr": "Formule express", 
+        "name": "Express menu", 
+        "body_fr": "<p>Le Pescator vous propose la formule express du lundi au vendredi:</p>\r\n\r\n<ul>\r\n\t<li>plat et dessert: 15\u20ac</li>\r\n\t<li>entr\u00e9e, plat et dessert: 20\u20ac</li></ul>\r\n", 
+        "template": "pages/block.html", 
+        "name_en": "Express menu", 
+        "body_en": "<p>Le Pescator offers the express menu from Monday to Friday:</p>\r\n\r\n<ul>\r\n\t<li>main dish and desert: 15\u20ac</li>\r\n\t<li>start, main dish and desert: 20\u20ac</li></ul>\r\n"
+    }
+},
+{
+    "pk": 3, 
+    "model": "pages.block", 
+    "fields": {
+        "body": "<p> &nbsp;</p>\r\n", 
+        "name_fr": "ShareThis", 
+        "name": "ShareThis", 
+        "body_fr": "<p> &nbsp;</p>\r\n", 
+        "template": "pages/blocks/sharethis.html", 
+        "name_en": "", 
+        "body_en": null
+    }
+},
+{
+    "pk": 4, 
+    "model": "pages.block", 
+    "fields": {
+        "body": "<p>View the&nbsp;<a href=\"http://www.youtube.com/watch?v=dm09TVTHHug\" target=\"_self\">video about the restaurant</a>, a production by&nbsp;<a href=\"http://lamontpellieraine.com/\" target=\"_blank\">La Montpelli\u00e9raine</a>&nbsp;.<br>\r\n\r\n</p>\r\n", 
+        "name_fr": "Le restaurant en vid\u00e9o", 
+        "name": "The restaurant video", 
+        "body_fr": "<p><a href=\"http://www.youtube.com/watch?v=dm09TVTHHug\" target=\"_self\" style=\"line-height: 1.5em;\">Le restaurant en vid\u00e9o</a>, une production de&nbsp;<a href=\"http://lamontpellieraine.com/\" target=\"_blank\">La Montpelli\u00e9raine</a>&nbsp;.</p>\r\n", 
+        "template": "pages/block.html", 
+        "name_en": "The restaurant video", 
+        "body_en": "<p>View the&nbsp;<a href=\"http://www.youtube.com/watch?v=dm09TVTHHug\" target=\"_self\">video about the restaurant</a>, a production by&nbsp;<a href=\"http://lamontpellieraine.com/\" target=\"_blank\">La Montpelli\u00e9raine</a>&nbsp;.<br>\r\n\r\n</p>\r\n"
+    }
+}
+]
