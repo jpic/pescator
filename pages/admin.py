@@ -33,4 +33,6 @@ class PageAdmin(TranslationAdmin):
             'fields': ('carousel_position', 'template', 'slug',),
         }),
     )
+    list_display = ('name', 'menu_name', 'menu_order')
+    list_editable = ('menu_order',)
 admin.site.register(Page, PageAdmin)

@@ -56,7 +56,7 @@ class Page(models.Model):
         verbose_name=_('menu title'), null=True, blank=True)
     menu_order = models.IntegerField(verbose_name=_('menu order'),
         help_text=_('the lowest number, the earliest this page will be '
-            'in menu'))
+            'in menu'), default=9)
     slug = models.CharField(max_length=200, null=True, blank=True)
     body = RedactorField(verbose_name=_('text'))
     header_image = models.ImageField(upload_to='pages/page',
