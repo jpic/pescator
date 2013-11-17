@@ -16,7 +16,7 @@ urlpatterns = patterns('',
     url(r'^search/', include('haystack.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^redactor/', include('redactor.urls')),
-) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+)
 
 urlpatterns += i18n_patterns('',
     url(r'^guestbook/', include('guestbook.urls')),
@@ -26,3 +26,5 @@ urlpatterns += i18n_patterns('',
 urlpatterns += patterns('',
     url(r'^$', views.HomeView.as_view(), name='home'),
 )
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
