@@ -32,7 +32,7 @@
     </head>
     <body class="{% block body_class %}{% endblock %}">
         <div class="container">
-            <div class="row header" style="background-image: url('{% block header_image %}{% thumbnail 'images/header.jpg' 400x400 %}{% endblock %}');">
+            <div class="row header" style="background-image: url('{% block header_image %}{% static 'images/header.jpg' %}{% endblock %}');">
             </div>
 
             <div class="navbar navbar-default" role="navigation">

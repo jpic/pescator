@@ -1,6 +1,10 @@
 {% extends 'pages/base.html' %}
 
+{% load thumbnail %}
+
 {% block head_title %}{{ page }}{% endblock %}
+
+{% block header_image %}{% if page.header_image %}{% thumbnail page.header_image 400x400 %}{% else %}{{ block.super }}{% endif %}{% endblock %}
 
 {% block body_class %}carousel-position-{{ page.carousel_position }}{% endblock %}
 
