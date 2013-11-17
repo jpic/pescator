@@ -7,6 +7,13 @@
 @font-size-base:          16px;
 @line-height-base:        2;
 
+h1, .h1 { font-size: floor(@font-size-base * 2); } // ~36px
+h2, .h2 { font-size: floor(@font-size-base * 1.80); } // ~30px
+h3, .h3 { font-size: ceil(@font-size-base * 1.50); } // ~24px
+h4, .h4 { font-size: ceil(@font-size-base * 1.25); } // ~18px
+h5, .h5 { font-size:  @font-size-base; }
+h6, .h6 { font-size: ceil(@font-size-base * 0.85); } // ~12px
+
 // Navbar overrides
 @import url(http://fonts.googleapis.com/css?family=Unica+One:400);
 
@@ -19,6 +26,9 @@
 
 .navbar {
     font-family: 'Unica One', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
 }
 
 h1 
