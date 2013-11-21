@@ -14,7 +14,9 @@
     {% endif %}
 
     <h1>{{ page }}</h1>
+    <div class="waves"></div>
     {{ page.body|safe }}
+    <div class="waves"></div>
     
     {% if page.carousel_position == 1 %}
         {% include 'pages/_carousel.html' %}
@@ -35,4 +37,10 @@
     {% endif %}
 {% endblock %}
 
-
+{% block extra_body %}
+<style type="text/css">
+h1 {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+{% endblock %}
