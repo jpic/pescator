@@ -19,6 +19,10 @@ h6, .h6 { font-size: ceil(@font-size-base * 0.85); }
 @navbar-default-bg:                        white;
 @navbar-default-link-active-bg:            lighten(#007add, 50.5%);
 
+.header li { background-color: white; }
+.header { position: relative; }
+.header ul { position: absolute; bottom: 0; right: 0; }
+
 /*
 body {
     background-color: #FFF7E4;
@@ -37,7 +41,7 @@ p {
     text-align: justify;
 }
 
-.navbar {
+.navbar, .nav {
     font-family: 'Unica One', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
 }

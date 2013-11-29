@@ -33,6 +33,13 @@
     <body class="{% block body_class %}{% endblock %}">
         <div class="container">
             <div class="header" style="background-image: url('{% block header_image %}{% static 'images/header.jpg' %}{% endblock %}');">
+                {% if other_languages %}
+                <ul class="nav navbar-nav navbar-right">
+                    {% for item in other_languages.values %}
+                    <li class="{% if item.url == request.path %}active{% endif %}"><a href="{{ item.url }}">{{ item.language }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
             </div>
 
             <div class="navbar navbar-default" role="navigation">
@@ -67,13 +74,6 @@
                         </li>
                         -->
                     </ul>
-                    {% if other_languages %}
-                    <ul class="nav navbar-nav navbar-right">
-                        {% for item in other_languages.values %}
-                        <li class="{% if item.url == request.path %}active{% endif %}"><a href="{{ item.url }}">{{ item.language }}</a></li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
                 </div><!--/.nav-collapse -->
             </div>
             
