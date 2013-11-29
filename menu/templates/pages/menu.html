@@ -7,6 +7,7 @@
 {% block extra_head %}
 <style type="text/css">
 table .description { font-size: smaller; }
+table .price { width: 50px; }
 </style>
 {% endblock %}
 
@@ -19,18 +20,18 @@ table .description { font-size: smaller; }
     <table class="table">
     {% for dish in category.dish_set.all %}
         <tr>
-            <td>
+            <td class="image">
                 {% if dish.image %}
                 <img src="{% thumbnail dish.image 100x100 crop %}" alt="{{ dish }}" />
                 {% endif %}
             </td>
-            <td>
+            <td class="dish">
                 {{ dish }}
                 <span class="description">
                     {{ dish.description|safe }}
                 </span>
             </td>
-            <td>
+            <td class="price">
                 &euro;{{ dish.sale_price_euros }}
             </td>
         </tr>
