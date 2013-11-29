@@ -1,0 +1,34 @@
+{% extends 'pages/page_detail.html' %}
+
+{% load menu_tags %}
+{% load thumbnail %}
+{% load i18n %}
+
+{% block body %}
+<h1>{% trans 'Menu' %}</h1>
+
+{% for category in request|menu_categories %}
+    <h2>{{ category }}</h2>
+    
+    <table class="table">
+    {% for dish in category.dish_set.all %}
+        <tr>
+            <td>
+                {% if dish.image %}
+                <img src="{% thumbnail dish.image 100x100 crop %}" alt="{{ dish }}" />
+                {% endif %}
+            </td>
+            <td>
+                {{ dish }}
+            </td>
+            <td>
+                {{ dish.description }}
+            </td>
+            <td>
+                &euro;{{ dish.sale_price_euros }}
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endfor %}
+{% endblock %}

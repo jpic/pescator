@@ -9,6 +9,7 @@ django-cache-panel
 -e git+https://github.com/jpic/django-yourlabs.git#egg=yourlabs
 django-extensions
 ipython
+django-admin-sortable
 ipdb
 django-haystack
 whoosh

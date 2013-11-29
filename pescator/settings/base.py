@@ -22,6 +22,7 @@ INSTALLED_APPS = (
     'pages',
     'guestbook',
     'bootstrapform',
+    'adminsortable',
     'south',
     'sortedm2m',
     'easy_thumbnails',
@@ -29,6 +30,7 @@ INSTALLED_APPS = (
     'compressor',
     'reversion',
     'yourlabs',
+    'menu',
     'pescator',
     'raven.contrib.django.raven_compat',
 )
