@@ -16,3 +16,8 @@ class CategoryAdmin(TranslationAdmin, SortableAdmin):
     inlines = (DishInline,)
     exclude = ('slug',)
 admin.site.register(Category, CategoryAdmin)
+
+
+class DishAdmin(TranslationAdmin):
+    exclude = ('slug',)
+admin.site.register(Dish, DishAdmin)
