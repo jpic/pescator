@@ -8,7 +8,8 @@ from .models import Category, Dish
 
 class DishInline(SortableTabularInline):
     model = Dish
-    exclude = ('slug', 'slug_fr', 'slug_en', 'name', 'description')
+    exclude = ('slug', 'slug_fr', 'slug_en', 'name', 'description',
+            'description_fr', 'description_en', 'image')
 
 
 class CategoryAdmin(TranslationAdmin, SortableAdmin):
