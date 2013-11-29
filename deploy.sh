@@ -38,6 +38,7 @@ function deploy() {
     source ../env/bin/activate
     git stash
     git pull origin master
+    pip install -r requirements/base.txt
     ./manage.py collectstatic -l --noinput
     ./manage.py migrate
     touch pescator/wsgi.py
