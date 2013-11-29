@@ -4,6 +4,12 @@
 {% load thumbnail %}
 {% load i18n %}
 
+{% block extra_head %}
+<style type="text/css">
+table .description { font-size: smaller; }
+</style>
+{% endblock %}
+
 {% block body %}
 <h1>{% trans 'Menu' %}</h1>
 
@@ -20,9 +26,9 @@
             </td>
             <td>
                 {{ dish }}
-            </td>
-            <td>
-                {{ dish.description }}
+                <span class="description">
+                    {{ dish.description|safe }}
+                </span>
             </td>
             <td>
                 &euro;{{ dish.sale_price_euros }}
