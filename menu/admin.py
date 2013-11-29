@@ -20,4 +20,7 @@ admin.site.register(Category, CategoryAdmin)
 
 class DishAdmin(TranslationAdmin):
     exclude = ('slug',)
+    list_display = ('pk', 'name_fr', 'name_en', 'description_fr', 'description_en')
+    list_editable = ('name_fr', 'name_en', 'description_fr', 'description_en')
+    list_display_links = ('pk',)
 admin.site.register(Dish, DishAdmin)
